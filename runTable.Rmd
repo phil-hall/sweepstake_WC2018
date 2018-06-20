@@ -1,0 +1,18 @@
+---
+title: "World Cup 2018 Sweepstake"
+author: "Latest Table"
+date: "16 June 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(pander)
+```
+
+```{r, include=FALSE}
+source("getData.R")
+row.names(table) <- NULL
+```
+
+`r pander(table,justify=c("left",rep("right",8)))`
